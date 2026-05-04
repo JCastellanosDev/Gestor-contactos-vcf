@@ -1,0 +1,9 @@
+*.vcf
+*.xlsx
+*.xls
+*.iml
+.idea/
+__pycache__/
+*.pyc
+ladas
+.DS_Store
