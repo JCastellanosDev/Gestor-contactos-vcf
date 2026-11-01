@@ -19,17 +19,19 @@ con los contactos nuevos detectados.
 Renumera secuencialmente los contactos con formato "Cliente X",
 detecta el último cliente agregado y mantiene el orden limpio.
 
-##  App requerida para el historial
-Necesitas descargar la app  en tu celular
-para exportar el historial de llamadas en formato Excel (.xlsx),
-que es el archivo que usan estos scripts.
+## Archivo de entrada
+`lada_contactos.py` e `historial_contactos.py` trabajan con el historial de llamadas
+de tu celular exportado a Excel (.xlsx). El archivo debe tener las columnas
+`Name` y `Phone Number`; los scripts detectan solos en qué fila están los encabezados.
+
+`renombrar_contactos.py` trabaja con un archivo `.vcf` ya existente.
 
 # Cómo usarlo
 
 Instala las dependencias:
 
 ```bash
-pip install pandas openpyxl
+pip install -r requirements.txt
 ```
 
 Ejecuta el script que necesites:
